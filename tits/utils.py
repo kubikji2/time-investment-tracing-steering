@@ -21,3 +21,15 @@ def parse_event(ev : event.ICREAMEvent):
 
     return tag, activity
 
+def read_dictionary_file(path) -> dict :
+    dic = {}
+    with open(path, 'r') as f:
+        lines = f.readlines()
+        for line in lines:
+            if not "#" in line and ":" in line:
+                key, data = line.split(":")
+                key = key.strip()
+                data = data.strip()
+                dic[key] = data
+    return dic
+    
