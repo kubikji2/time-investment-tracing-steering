@@ -13,7 +13,7 @@ def parse_event(ev : event.ICREAMEvent):
         swp = ev.name.split("[")[1]
         swp, description = swp.split("]")
         if "-" in swp:
-            tag, activity = swp.split("-")
+            tag, activity = swp.split("-")[0:2]
         else:
             tag = swp
         tag = tag.strip().upper()
