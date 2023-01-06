@@ -1,0 +1,3 @@
+[submodule "icream"]
+	path = icream
+	url = https://github.com/kubikji2/icream
