@@ -1,15 +1,16 @@
-from icream.icream import event
+from .icream.icream import event
+
+def is_parsable_event(ev : event.ICREAMEvent):
+    return "[" in ev.name and "]" in ev.name
 
 def parse_event(ev : event.ICREAMEvent):
 
     tag = ""
     activity = ""
 
-    name = ev.name
-    print(name)
-    if "[" in name and "]" in name:
+    if is_parsable_event(ev):
         # string work piece
-        swp = name.split("[")[1]
+        swp = ev.name.split("[")[1]
         swp, description = swp.split("]")
         if "-" in swp:
             tag, activity = swp.split("-")
