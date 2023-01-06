@@ -3,7 +3,7 @@ from .icream.icream import event
 
 class TITSEvent(event.ICREAMEvent):
 
-    def __init__(self, tag, category="", ev : event.ICREAMEvent = None, start=None, end=None, name="", organizer="", description="", component=None):
+    def __init__(self, tag, activity="", ev : event.ICREAMEvent = None, start=None, end=None, name="", organizer="", description="", component=None):
         if ev is not None:
             start = ev.start
             end = ev.end
@@ -13,4 +13,4 @@ class TITSEvent(event.ICREAMEvent):
             component = ev.component
         super().__init__(start, end, name, organizer, description, component)
         self.tag = tag
-        self.category = category
+        self.category = activity

@@ -14,7 +14,7 @@ class TITSCalendar(calendar.ICREAMCalendar):
         for ev in events:
             if utils.is_parsable_event(ev):
                 _tag, _category = utils.parse_event(ev)
-                _ev = event.TITSEvent(tag=_tag,category=_category, ev=ev)
+                _ev = event.TITSEvent(tag=_tag,activity=_category, ev=ev)
                 filtered.append(_ev)
             pass
             
