@@ -13,4 +13,5 @@ class TITSEvent(event.ICREAMEvent):
             component = ev.component
         super().__init__(start, end, name, organizer, description, component)
         self.tag = tag
-        self.category = activity
+        self.activity = activity
+        self.category = None
