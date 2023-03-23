@@ -1,0 +1,15 @@
+# comment
+students: OPel, OP, RV
+teaching: prga, prg, uir, prp, students, $students, bootcamp
+# _papers: itat
+papers: writing, drafting, publishing, presenting, $_papers
+# projects: sw, hw, implementation, coding, integration, design, $_projects
+projects: vrj, snake, project, projects, 
+CC: CC23, CC
+PR: DOD, $CC
+faculty: AS, AS FEL, academics policy, ombuds, $PR, PR
+social: coffee, teambuildings
+CRL: cleanup, 3D, 3D printer, 3D print, 3D printing, $social, lab, crl, tutorial, tutorials
+workshops: 
+comunity: $workshops, $crl
+growth: tm, timemanagement
